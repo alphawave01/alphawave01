@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Wave</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    :root {
+      --kuning: #FFD700;
+      --hitam: #000000;
+    }
+  </style>
+</head>
+<body class="font-sans text-white bg-[var(--hitam)]">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[var(--hitam)] shadow">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-bold text-[var(--kuning)]">Alpha Wave</h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm font-semibold">
+          <li><a href="#beranda" class="hover:text-[var(--kuning)] transition">Beranda</a></li>
+          <li><a href="#kursus" class="hover:text-[var(--kuning)] transition">Kursus</a></li>
+          <li><a href="#tentang" class="hover:text-[var(--kuning)] transition">Tentang</a></li>
+          <li><a href="#kontak" class="hover:text-[var(--kuning)] transition">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="pt-32 pb-24 bg-gradient-to-r from-yellow-500 to-yellow-300 text-black">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <!-- Gambar logo -->
+      <img src="alpha-wave-logo.jpg" alt="Logo Alpha Wave" class="mx-auto mb-8 w-48 rounded-xl shadow-lg">
+      
+      <h2 class="text-4xl font-bold mb-4">Belajar Forex dari Ahlinya</h2>
+      <p class="text-lg mb-8">Akses materi berkualitas, analisa pasar, dan strategi profit konsisten</p>
+      <a href="#kursus" class="bg-black text-[var(--kuning)] font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-800 transition">
+        Mulai Belajar Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Kursus Section -->
+  <section id="kursus" class="py-20 bg-[var(--hitam)]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12 text-[var(--kuning)]">Pilihan Kursus</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2 text-[var(--kuning)]">Dasar-dasar Forex</h4>
+          <p class="text-sm text-gray-300 mb-4">Pahami konsep dasar trading forex dari nol.</p>
+          <a href="#" class="text-[var(--kuning)] font-medium hover:underline">Lihat Kursus →</a>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2 text-[var(--kuning)]">Analisa Teknikal</h4>
+          <p class="text-sm text-gray-300 mb-4">Pelajari cara membaca chart dan indikator teknikal.</p>
+          <a href="#" class="text-[var(--kuning)] font-medium hover:underline">Lihat Kursus →</a>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2 text-[var(--kuning)]">Strategi Lanjutan</h4>
+          <p class="text-sm text-gray-300 mb-4">Kuasai teknik manajemen risiko dan strategi profit.</p>
+          <a href="#" class="text-[var(--kuning)] font-medium hover:underline">Lihat Kursus →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Section -->
+  <section id="tentang" class="py-20 bg-black">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-[var(--kuning)]">Tentang Alpha Wave</h3>
+      <p class="text-gray-300 leading-relaxed">
+        Kami adalah komunitas edukasi trading yang berkomitmen membimbing trader Indonesia untuk sukses di dunia forex.
+        Kami menyediakan kursus terstruktur, mentor ahli, dan komunitas aktif.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-8 text-[var(--kuning)]">Kontak Kami</h3>
+      <form class="space-y-6 bg-black p-8 rounded-xl shadow">
+        <input type="text" placeholder="Nama Anda" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" />
+        <input type="email" placeholder="Email Anda" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" />
+        <textarea placeholder="Pesan" rows="5" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded"></textarea>
+        <button type="submit" class="bg-[var(--kuning)] text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400">
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-6">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm">
+      &copy; 2025 Alpha Wave. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+                </html>
