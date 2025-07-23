@@ -83,7 +83,7 @@
   <section id="kontak" class="py-20 bg-gray-900">
     <div class="max-w-4xl mx-auto px-6">
       <h3 class="text-3xl font-bold text-center mb-8 text-[var(--kuning)]">Kontak Kami</h3>
-      <form class="space-y-6 bg-black p-8 rounded-xl shadow" onsubmit="kirimTelegram(event)">
+      <form class="space-y-6 bg-black p-8 rounded-xl shadow" onsubmit="kirimWhatsapp(event)">
         <input id="nama" type="text" placeholder="Nama Anda" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" required />
         <input id="alamat" type="text" placeholder="Alamat Anda" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" required />
         <input id="usia" type="number" placeholder="Usia Anda" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" required />
@@ -94,7 +94,7 @@
         </select>
         <textarea id="pesan" placeholder="Pesan" rows="5" class="w-full border border-gray-600 bg-gray-800 text-white p-3 rounded" required></textarea>
         <button type="submit" class="bg-[var(--kuning)] text-black font-semibold px-6 py-3 rounded hover:bg-yellow-400">
-          Kirim ke Telegram
+          Kirim via WhatsApp
         </button>
       </form>
     </div>
@@ -107,23 +107,23 @@
     </div>
   </footer>
 
-  <!-- JS Script -->
+  <!-- WhatsApp Script -->
   <script>
-    function kirimTelegram(event) {
+    function kirimWhatsapp(event) {
       event.preventDefault();
-
       const nama = document.getElementById("nama").value;
       const alamat = document.getElementById("alamat").value;
       const usia = document.getElementById("usia").value;
       const gender = document.getElementById("gender").value;
       const pesan = document.getElementById("pesan").value;
 
-      const teks = `Halo Admin @Sangketu4%0A%0ADetail Kontak:%0A• Nama: ${nama}%0A• Alamat: ${alamat}%0A• Usia: ${usia}%0A• Jenis Kelamin: ${gender}%0A• Pesan: ${pesan}`;
+      const text = `Halo Admin,%0ASaya ingin mendaftar:%0A%0A• Nama: ${nama}%0A• Alamat: ${alamat}%0A• Usia: ${usia}%0A• Jenis Kelamin: ${gender}%0A• Pesan: ${pesan}`;
+      const phone = "6282133746928"; // Nomor tujuan (tanpa tanda +)
 
-      const url = `https://t.me/share/url?url=https://t.me/Sangketu4&text=${teks}`;
+      const url = `https://wa.me/${phone}?text=${text}`;
       window.open(url, '_blank');
     }
   </script>
 
 </body>
- </html>
+                                                                                        </html>
